@@ -31,17 +31,41 @@
       <!-- /background container -->
 
       <!-- chat container -->
-      <div class="chat_container">
+      <div class="chat_container dsp_flex backgrd_color_grey">
 
         <!-- left section of chat -->
         <section id="left_section">
 
           <!-- user -->
-          <div class="user_bar bar"></div>
+          <div class="user_bar bar dsp_flex backgrd_color_grey">
+            <!-- icon user -->
+            <div class="user_icon">
+              <img class="users_icons" src="img/avatar_io.jpg" alt="my avatar">
+            </div>
+            <!-- /icon user -->
+
+            <!-- user commands -->
+            <div class="user_commands">
+              <ul class="user_command_list dsp_flex">
+                <li> <i class="fas fa-circle-notch icons"> </i> </li>
+                <li> <i class="fas fa-comment-alt icons"> </i> </li>
+                <li> <i class="fas fa-ellipsis-v icons"> </i> </li>
+              </ul>
+            </div>
+            <!-- /user commands -->
+          </div>
           <!-- /user -->
 
           <!-- alert -->
-          <div class="alert_bar bar"></div>
+          <div class="alert_bar bar dsp_flex">
+            <div class="container_icon dsp_flex">
+              <i class="far fa-bell-slash icons alert_icon"></i>
+            </div>
+            <div class="ln_height_normal">
+              <span>Ricevi notifiche di nuovi messaggi</span>
+              <p><a href="#">Attiva notifiche desktop</a></p>
+            </div>
+          </div>
           <!-- /alert -->
 
           <!-- search -->
@@ -59,7 +83,7 @@
         <section id="right_section">
 
           <!-- chat name -->
-          <div class="chatting_with bar"></div>
+          <div class="chatting_with bar backgrd_color_grey"></div>
           <!-- /chat name -->
 
           <!-- chat messages -->
@@ -67,7 +91,7 @@
           <!-- /chat messages -->
 
           <!-- writer -->
-          <div class="chat_writer bar"></div>
+          <div class="chat_writer bar backgrd_color_grey"></div>
           <!-- /writer -->
         </section>
         <!-- /right section of chat -->

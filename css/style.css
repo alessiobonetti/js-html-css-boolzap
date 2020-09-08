@@ -9,9 +9,31 @@
 .bar {
   height: 55px;
   width: 100%;
+  line-height: 55px;
 }
 
+.icons {
+  font-size: 2.2rem;
+  color: #B5B5B5;
+}
 
+.users_icons {
+  max-width: 40px;
+  border-radius: 50px;
+}
+
+.backgrd_color_grey {
+    background-color: #EAEAEA;
+}
+
+/* flex */
+.dsp_flex {
+  display: flex;
+}
+
+.ln_height_normal {
+  line-height: normal;
+}
 
 /* MAIN BACKGROUND */
 #main_background {
@@ -37,13 +59,11 @@
 
 /* CHAT CONTAINER */
 .chat_container {
-  display: flex;
   position: absolute;
   top:5%;
   left:10%;
   height: 90%;
   width: 80%;
-  background-color: #EAEAEA;
   margin: auto;
   z-index: 1;
 }
@@ -58,19 +78,49 @@
 }
 /* user bar */
 .user_bar {
-  background-color: pink;
+
+}
+.user_icon{
+  width: 30%;
+  padding-left: 5px;
 }
 
+.user_commands{
+  width: 70%;
+}
+.user_command_list{
+  justify-content: flex-end;
+}
+.user_command_list li {
+  list-style: none;
+  padding: 0 15px;
+}
+
+/* alert bar */
 .alert_bar {
-  background-color: lightblue;
+  padding: 5px;
+  background-color: #8EDAFC;
 }
-
+.container_icon {
+  justify-content: center;
+  vertical-align: middle;
+  height: 60%;
+  padding:0 15px;
+}
+.alert_icon {
+  height: 100%;
+  background-color: #fff;
+  color:#8EDAFC;
+  border-radius: 50px;
+  font-size: 28px;
+}
+/* search bar */
 .search_bar {
   height: 40px;
   width: 100%;
   background-color: #fff;
 }
-
+/* chat list */
 .chat_list {
   height: calc(100% - 150px);
   width: 100%;
