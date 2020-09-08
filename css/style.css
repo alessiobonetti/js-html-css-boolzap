@@ -1,0 +1,41 @@
+/* GENERAL UTILITUES */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+}
+
+/* MAIN BACKGROUND */
+#main_background {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top:0;
+  left:0;
+  z-index: -1;
+}
+
+.main_background_top{
+  height: 100px;
+  width: 100%;
+  background-color: #009688;
+}
+
+.main_background_centre{
+  height: calc(100% - 100px);
+  width: 100%;
+  background-color: #DADBD3;
+}
+
+/* CHAT CONTAINER */
+.chat_container {
+  position: absolute;
+  top:5%;
+  left:10%;
+  height: 90%;
+  width: 80%;
+  background-color: #EAEAEA;
+  margin: auto;
+  z-index: 1;
+}
