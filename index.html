@@ -265,11 +265,27 @@
           <!-- chat messages -->
           <div class="chat_messages">
             <img src="img/mine.jpg" alt="background">
+            <div class="message_row">
+              <div class="message">
+                <div class="message_text">Ciao come stai?</div>
+                <div class="message_time">11:05</div>
+              </div>
+            </div>
           </div>
           <!-- /chat messages -->
 
           <!-- writer -->
-          <div class="chat_writer bar backgrd_color_grey"></div>
+          <div class="chat_writer dsp_flex bar backgrd_color_grey">
+            <div class="chat_writer_icon">
+              <i class="far fa-smile icons"></i>
+            </div>
+
+            <input id="input_message" type="text">
+
+            <div class="chat_writer_icon">
+              <i class="send_message fa fa-paper-plane icons"></i>
+            </div>
+          </div>
           <!-- /writer -->
         </section>
         <!-- /right section of chat -->
@@ -277,6 +293,16 @@
       <!-- /chat container -->
     </main>
     <!-- /main body -->
+    <!-- template -->
+    <div class="template">
+      <div class="message_row">
+        <div class="message">
+          <div class="message_text">Ciao come stai?</div>
+          <div class="message_time">11:05</div>
+        </div>
+      </div>
+    </div>
+    <!-- /template -->
     <!-- Java Script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
