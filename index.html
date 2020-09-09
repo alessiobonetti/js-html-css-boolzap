@@ -73,7 +73,7 @@
             <label class="search_label" for="search">
               <i class="fa fa-search icons"></i>
             </label>
-            <input id="search" name="search" type="text" placeholder="cerca o inizia una ricerca">
+            <input id="search" name="search" type="text" placeholder="cerca o inizia una nuova chat">
           </div>
           <!-- /search -->
 
@@ -244,11 +244,28 @@
         <section id="right_section">
 
           <!-- chat name -->
-          <div class="chatting_with bar backgrd_color_grey"></div>
+          <div class="chatting_with bar backgrd_color_grey dsp_flex">
+            <div class="chatting_with_avatar users_icon">
+              <img src="img/avatar_1.jpg" alt="chatting with avatar">
+            </div>
+            <div class="chatting_with_text">
+              <h4 class="chatting_with_name">Samuele</h4>
+              <p class="contact_last_seen">ultimo accesso oggi alle 11:20</p>
+            </div>
+            <div class="chatting_with_commands">
+              <ul class="chatting_with_command_list dsp_flex">
+                <li> <i class="fas fa-circle-notch icons"> </i> </li>
+                <li> <i class="fas fa-comment-alt icons"> </i> </li>
+                <li> <i class="fas fa-ellipsis-v icons"> </i> </li>
+              </ul>
+            </div>
+          </div>
           <!-- /chat name -->
 
           <!-- chat messages -->
-          <div class="chat_messages"></div>
+          <div class="chat_messages">
+            <img src="img/mine.jpg" alt="background">
+          </div>
           <!-- /chat messages -->
 
           <!-- writer -->

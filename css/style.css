@@ -170,17 +170,41 @@
 #right_section {
   height: 100%;
   width: 65%;
-  background-color: green;
+}
+/* chatting with */
+.chatting_with {
+ padding: 15px;
 }
 
-.chatting_with {
-  background-color: blue;
+.chatting_with_text{
+  margin-left: 20px;
 }
+
+
+
+.chatting_with_commands{
+  margin-left: auto;
+}
+ .chatting_with_command_list {
+   list-style: none;
+ }
+.chatting_with_command_list li{
+  padding: 0 10px;
+}
+
 
 .chat_messages {
+  position: relative;
   height: calc(100% - 110px);
   width: 100%;
-  background-color: grey;
+}
+
+.chat_messages img{
+  position: absolute;
+  left:0;
+  top:0;
+  background-repeat: repeat;
+  z-index: -1;
 }
 
 .chat_writer {
