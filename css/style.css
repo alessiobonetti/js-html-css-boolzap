@@ -217,7 +217,7 @@
 .message_row.sent {
   justify-content: flex-end;
 }
-.sent{
+.sent .message{
   background-color: lightgreen;
 }
 
