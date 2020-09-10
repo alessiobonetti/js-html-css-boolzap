@@ -6,7 +6,7 @@ function sendMessage() {
     var time = getTime();
 
     templateMessage.find(".message_text").text(inputText);
-    templateMessage.find("message_time").text(time);
+    templateMessage.find(".message_time").text(time);
     templateMessage.addClass("sent");
 
     $(".chat_messages").append(templateMessage);
@@ -16,13 +16,14 @@ function sendMessage() {
 }
 
 function cpuMessage(){
-  var cpuMessage = $(".templates .message_row").clone();
+  var cpuMessage = $(".template .message_row").clone();
 
   cpuMessage.find(".message_text").text("Ok");
   var time = getTime();
   cpuMessage.find(".message_time").text(time);
-
+  console.log(cpuMessage);
   $(".chat_messages").append(cpuMessage);
+
 }
 
 function getTime() {
@@ -52,5 +53,25 @@ $(document).ready(function() {
       }
     }
   );
+
+  $("#search").keyup(
+    function() {
+      var searchInput = $(this).val();
+      searchInput = searchInput.toLowerCase();
+      var contactName = $(".contact .contact_name")
+
+      contactName.each(
+        function() {
+        var name = $(this).text();
+        name = name.toLowerCase();
+        console.log(searchInput);
+        if (name.includes(searchInput) == true) {
+          $(this).parents(".contact").show();
+        } else {
+          $(this).parents(".contact").hide();
+        }
+      });
+    }
+  )
 
 });
