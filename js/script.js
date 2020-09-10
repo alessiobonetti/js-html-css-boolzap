@@ -37,6 +37,10 @@ function getTime() {
   return  hours + ":" + minutes;
 }
 
+function contactActive () {
+
+}
+
 
 $(document).ready(function() {
  $(".send_message").click(
@@ -71,6 +75,17 @@ $(document).ready(function() {
           $(this).parents(".contact").hide();
         }
       });
+    }
+  )
+
+  $(".chat_list li").click(
+    function() {
+      var contactIndex = $(this).index();
+      $(".chat_list li").removeClass("contact_active")
+      $(this).addClass("contact_active");
+      $(".chat_messages").removeClass("chat_active");
+      var indexChat = contactIndex +1;
+      $(".chat_messages:nth-child("+indexChat+")").addClass("chat_active");
     }
   )
 

@@ -161,6 +161,10 @@
   align-self: flex-start;
 }
 
+.contact_active {
+  background-color: grey;
+}
+
 
 
 
@@ -192,22 +196,29 @@
   padding: 0 10px;
 }
 
-
-.chat_messages {
+/* CHAT */
+.all_chats {
   padding:50px;
   position: relative;
   height: calc(100% - 110px);
   width: 100%;
   overflow-y: scroll;
 }
-
-.chat_messages img{
+.all_chats img{
   position: absolute;
   left:0;
   top:0;
   background-repeat: repeat;
   z-index: -1;
 }
+.chat_messages {
+  display:none;
+}
+
+.chat_active {
+  display: block;
+}
+
 
 .message_row{
   display: flex;
