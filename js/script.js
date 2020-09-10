@@ -42,13 +42,15 @@ $(document).ready(function() {
    function() {
      sendMessage();
    }
- )
-})
+ );
 
-$("#input_message").keyup(
-  function(event) {
-    if(event.which == 13) {
-      sendMessage();
+
+ $("#input_message").keyup(
+    function(event) {
+      if(event.which == 13) {
+        sendMessage();
+      }
     }
-  }
-)
+  );
+
+});
