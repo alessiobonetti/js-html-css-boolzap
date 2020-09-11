@@ -198,19 +198,14 @@
 
 /* CHAT */
 .all_chats {
-  padding:50px;
+  padding:40px 120px;
   position: relative;
   height: calc(100% - 110px);
   width: 100%;
   overflow-y: scroll;
+  background-image: url(../img/mine.jpg);
 }
-.all_chats img{
-  position: absolute;
-  left:0;
-  top:0;
-  background-repeat: repeat;
-  z-index: -1;
-}
+
 .chat_messages {
   display:none;
 }
@@ -218,7 +213,6 @@
 .chat_active {
   display: block;
 }
-
 
 .message_row{
   display: flex;
@@ -240,11 +234,50 @@
   background-color: #fff;
 }
 
+.message_text {
+  max-width: 200px;
+  width: 80px;
+}
+
 .message_time{
   position: absolute;
   bottom:2px;
   right:2px;
   font-size: 13px;
+}
+
+.message_option{
+  display: none;
+  position: absolute;
+  top:2px;
+  right:4px;
+  cursor: pointer;
+}
+
+.message_menu {
+  display: none;
+  position: absolute;
+  top:55px;
+  left: 0px;
+  width: 150px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 2px 2px 5px #555;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.message_menu ul {
+  list-style: none;
+}
+
+.message_menu li {
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+.message:hover .message_option{
+  display: block;
 }
 /* writer */
 
