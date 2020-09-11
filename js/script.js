@@ -121,6 +121,7 @@ $(document).ready(function() {
   // show message menu
   $(document).on("click", ".message .message_option" ,
     function() {
+      // seleziono elemento a cui applicare toggle
       $(this).siblings(".message_menu").toggle();
     }
   );
@@ -128,8 +129,15 @@ $(document).ready(function() {
   // chat delete messages
   $(document).on("click", ".message_menu .delete_message",
     function(){
+      // seleziono elemento a cui applicare remove
       $(this).parents(".message_row").remove();
     }
   );
+
+  $("body").click(function(e) {
+  if(e.target.id !== ".message_menu"){
+    $(".message_menu").hide();
+  }
+  });
 
 });

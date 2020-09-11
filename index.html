@@ -39,7 +39,7 @@
           <!-- user -->
           <div class="user_bar bar dsp_flex backgrd_color_grey">
             <!-- icon user -->
-            <div class="users_icon">
+            <div class="users_icon pointer">
               <img src="img/avatar_io.jpg" alt="my avatar">
             </div>
             <!-- /icon user -->
@@ -47,9 +47,9 @@
             <!-- user commands -->
             <div class="user_commands">
               <ul class="user_command_list dsp_flex">
-                <li> <i class="fas fa-circle-notch icons"> </i> </li>
-                <li> <i class="fas fa-comment-alt icons"> </i> </li>
-                <li> <i class="fas fa-ellipsis-v icons"> </i> </li>
+                <li> <i class="fas fa-circle-notch icons pointer"> </i> </li>
+                <li> <i class="fas fa-comment-alt icons pointer"> </i> </li>
+                <li> <i class="fas fa-ellipsis-v icons pointer"> </i> </li>
               </ul>
             </div>
             <!-- /user commands -->
@@ -71,14 +71,14 @@
           <!-- search -->
           <div class="search_bar dsp_flex bar">
             <label class="search_label" for="search">
-              <i class="fa fa-search icons"></i>
+              <i class="fa fa-search icons pointer"></i>
             </label>
             <input id="search" name="search" type="text" placeholder="cerca o inizia una nuova chat">
           </div>
           <!-- /search -->
 
           <!-- chat list -->
-          <ul class="chat_list">
+          <ul class="chat_list pointer">
             <!--contacts -->
             <li class="contact dsp_flex contact_active" data-contact = "0">
               <!-- avatar -->
@@ -246,7 +246,7 @@
 
           <!-- chat name -->
           <div class="chatting_with bar backgrd_color_grey dsp_flex">
-            <div class="chatting_with_avatar users_icon">
+            <div class="chatting_with_avatar users_icon pointer">
               <img src="img/avatar_3.jpg" alt="chatting with avatar">
             </div>
             <div class="chatting_with_text">
@@ -254,9 +254,9 @@
               <p class="contact_last_seen">ultimo accesso oggi alle 11:20</p>
             </div>
             <div class="chatting_with_commands">
-              <ul class="chatting_with_command_list dsp_flex">
-                <li> <i class="fas fa-circle-notch icons"> </i> </li>
-                <li> <i class="fas fa-comment-alt icons"> </i> </li>
+              <ul class="chatting_with_command_list dsp_flex pointer">
+                <li> <i class="fas fa-search icons"></i> </li>
+                <li> <i class="fas fa-paperclip icons"></i> </li>
                 <li> <i class="fas fa-ellipsis-v icons"> </i> </li>
               </ul>
             </div>
@@ -270,7 +270,7 @@
               <div class="message_row">
                 <div class="message">
                   <div class="message_option">
-                    <i class="fas fa-chevron-down icons"></i>
+                    <i class="fas fa-chevron-down icons pointer"></i>
                   </div>
                   <div class="message_text">Chat1</div>
                   <div class="message_time">11:05</div>
@@ -288,7 +288,7 @@
               <div class="message_row">
                 <div class="message">
                   <div class="message_option">
-                    <i class="fas fa-chevron-down icons"></i>
+                    <i class="fas fa-chevron-down icons pointer"></i>
                   </div>
                   <div class="message_text">Chat2</div>
                   <div class="message_time">11:05</div>
@@ -306,7 +306,7 @@
               <div class="message_row">
                 <div class="message">
                   <div class="message_option">
-                    <i class="fas fa-chevron-down icons"></i>
+                    <i class="fas fa-chevron-down icons pointer"></i>
                   </div>
                   <div class="message_text">Chat3</div>
                   <div class="message_time">11:05</div>
@@ -324,7 +324,7 @@
               <div class="message_row">
                 <div class="message">
                   <div class="message_option">
-                    <i class="fas fa-chevron-down icons"></i>
+                    <i class="fas fa-chevron-down icons pointer"></i>
                   </div>
                   <div class="message_text">Chat4</div>
                   <div class="message_time">11:05</div>
@@ -342,7 +342,7 @@
               <div class="message_row">
                 <div class="message">
                   <div class="message_option">
-                    <i class="fas fa-chevron-down icons"></i>
+                    <i class="fas fa-chevron-down icons pointer"></i>
                   </div>
                   <div class="message_text">Chat5</div>
                   <div class="message_time">11:05</div>
@@ -360,7 +360,7 @@
               <div class="message_row">
                 <div class="message">
                   <div class="message_option">
-                    <i class="fas fa-chevron-down icons"></i>
+                    <i class="fas fa-chevron-down icons pointer"></i>
                   </div>
                   <div class="message_text">Chat6</div>
                   <div class="message_time">11:05</div>
@@ -378,7 +378,7 @@
               <div class="message_row">
                 <div class="message">
                   <div class="message_option">
-                    <i class="fas fa-chevron-down icons"></i>
+                    <i class="fas fa-chevron-down icons pointer"></i>
                   </div>
                   <div class="message_text">Chat7</div>
                   <div class="message_time">11:05</div>
@@ -396,7 +396,7 @@
               <div class="message_row">
                 <div class="message">
                   <div class="message_option">
-                    <i class="fas fa-chevron-down icons"></i>
+                    <i class="fas fa-chevron-down icons pointer"></i>
                   </div>
                   <div class="message_text">Chat8</div>
                   <div class="message_time">11:05</div>
@@ -416,7 +416,7 @@
           <!-- writer -->
           <div class="chat_writer dsp_flex bar backgrd_color_grey">
             <div class="chat_writer_icon">
-              <i class="far fa-smile icons"></i>
+              <i class="far fa-smile icons pointer"></i>
             </div>
 
             <input id="input_message" type="text">
@@ -432,6 +432,7 @@
       <!-- /chat container -->
     </main>
     <!-- /main body -->
+
     <!-- template -->
     <div class="template">
       <div class="message_row">
@@ -451,6 +452,7 @@
       </div>
     </div>
     <!-- /template -->
+
     <!-- Java Script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/script.js"></script>

@@ -6,6 +6,10 @@
   padding:0;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 .bar {
   height: 55px;
   width: 100%;
@@ -91,6 +95,7 @@
 .user_bar{
   padding: 2px 10px;
   justify-content: space-between;
+  border-right: 2px solid lightgrey;
 }
 .user_commands{
   width: 70%;
@@ -251,7 +256,6 @@
   position: absolute;
   top:2px;
   right:4px;
-  cursor: pointer;
 }
 
 .message_menu {
@@ -264,6 +268,7 @@
   background-color: #fff;
   box-shadow: 2px 2px 5px #555;
   border-radius: 5px;
+  cursor: pointer;
   z-index: 1;
 }
 
@@ -273,7 +278,6 @@
 
 .message_menu li {
   padding-bottom: 5px;
-  cursor: pointer;
 }
 
 .message:hover .message_option{
