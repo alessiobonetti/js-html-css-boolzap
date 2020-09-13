@@ -135,7 +135,7 @@ $(document).ready(function() {
   );
 
   $("body").click(function(e) {
-  if(e.target.id !== ".message_menu"){
+  if(e.target !== ".message_menu"){
     $(".message_menu").hide();
   }
   });

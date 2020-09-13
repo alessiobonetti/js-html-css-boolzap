@@ -17,7 +17,7 @@
 }
 
 .icons {
-  font-size: 2.2rem;
+  font-size: 1rem;
   color: #B5B5B5;
 }
 
@@ -89,7 +89,7 @@
 #left_section {
   height: 100%;
   width: 35%;
-  background-color: red;
+  background-color: #8EDAFC;
 }
 /* user bar */
 .user_bar{
@@ -111,7 +111,8 @@
 /* alert bar */
 .alert_bar {
   padding: 5px;
-  background-color: #8EDAFC;
+  margin: 5px 15px;
+
 }
 .container_icon {
   height: 50px;
@@ -138,11 +139,13 @@
 
 .search_label {
   width: 80px;
-  text-align: center;
+  text-align: left;
 }
 
 #search {
+  height: 100%;
   width: calc(100% - 80px);
+  border: 0.5px solid #999;
 }
 /* chat list */
 .chat_list {
@@ -159,6 +162,11 @@
 
 .contact_text {
   margin-left: 15px;
+}
+
+.contact_last_message{
+  margin-top: 5px;
+  color: #666;
 }
 
 .contact_time {
@@ -189,7 +197,9 @@
   margin-left: 20px;
 }
 
-
+.contact_last_seen {
+  color: #666;
+}
 
 .chatting_with_commands{
   margin-left: auto;
@@ -261,7 +271,7 @@
 .message_menu {
   display: none;
   position: absolute;
-  top:55px;
+  top:110%;
   left: 0px;
   width: 150px;
   text-align: center;
